@@ -15,7 +15,7 @@ SPI was written for the most common server Linux operating systems:
 64 Bit versions of some operating systems require more than 256 MB RAM for Squid to work (this includes generally Debian and Ubuntu as a outcome of various tests in OpenVZ).<br /><br /><br />
 <b>How to use:</b><br /><br />
 Step 1: Download the script to your server via wget/curl:<br />
-<code>wget https://raw.githubusercontent.com/hidden-refuge/squid-proxy-installer/master/spi</code><br /><br />
+<code>wget https://raw.githubusercontent.com/iephdevs/iephsquid/master/spi</code><br /><br />
 Step 2: Give the file execution permissions with chmod:<br />
 <code>chmod +x spi</code><br /><br />
 Step 3: Run one of the following commands according to your OS:<br /><br />
