@@ -22,6 +22,10 @@ vsysarch=$(getconf LONG_BIT) # System architecture
 firew1 ()	{
 	# Opening default Squid port 3128 for clients to connect
 	iptables -I INPUT -p tcp --dport 3128 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 8888 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+	
 	# Saving firewall rules
 	service iptables save
 }
@@ -30,6 +34,9 @@ firew1 ()	{
 firew2 ()	{
 	# Opening default Squid port 3128 for clients to connect
 	iptables -I INPUT -p tcp --dport 3128 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 8888 -j ACCEPT
+	iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 	# Saving firewall rules
 	iptables-save
 }
